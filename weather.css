@@ -1,0 +1,707 @@
+body {
+    /* background:linear-gradient(270deg, rgb(39, 191, 217),rgb(225, 218, 7)) ;
+     */
+    background-image: url("pexels-pixabay-209831.jpg");
+    font-family: "Roboto Condensed", sans-serif;
+    color: rgb(1, 6, 60)
+}
+
+.mm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    position: relative;
+    top: -10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.name {
+    height: 8vh;
+    width: 67.4vw;
+    position: relative;
+    /* left:100px; */
+    border: 2px solid rgb(40, 39, 39);
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 50px;
+    margin: 17px;
+}
+
+#tt {
+    position: relative;
+    top: -147px;
+    left: 213px;
+}
+
+.input textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.input img {
+    height: 40px;
+    position: relative;
+    top: 10px;
+    padding: 0px 5px;
+}
+
+.input {
+    border: 2px solid rgb(40, 39, 39);
+    border-radius: 20px;
+    /* background-color: red; */
+    width: 67.4vw;
+    height: 8vh;
+    margin: 17px;
+    display: flex;
+    /* cursor: pointer; */
+}
+
+input {
+    border-radius: 20px;
+    background-color: inherit;
+    width: 67vw;
+    height: 8vh;
+    border: none;
+    /* text-align: center; */
+    position: relative;
+    left: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: rgb(239, 231, 231);
+}
+
+#input textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.container {
+    /* justify-content: center; */
+    /* position: relative; */
+    transform: translateY(13%);
+    /* align-items: center; */
+    /* display: flex; */
+    height: 80vh;
+    width: 70vw;
+    border-radius: 20px;
+    border: 2px solid rgb(40, 39, 39);
+    /* opacity:0.2; */
+    background-color: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.weather {
+    /* background-color: red;  */
+    height: 54vh;
+    width: 67.4vw;
+    margin: 17px;
+    border-radius: 20px;
+    border: 2px solid rgb(40, 39, 39);
+}
+
+.day {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.date {
+    margin: 10px;
+    padding: 0px 20px;
+    font-weight: 900;
+    font-size: 43px;
+    top: 40px;
+    position: relative;
+}
+
+.place {
+    padding: 5px 40px;
+    font-size: 40px;
+    font-weight: 900;
+    position: relative;
+
+
+}
+
+#jj {
+    padding: 0px 4px;
+}
+
+.temp {
+    padding: 0px 28px;
+    font-size: 120px;
+    font-weight: 900;
+    position: relative;
+    left: 640px;
+    top: -120px
+}
+
+.pre {
+    padding: 0px 28px;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    top: -195px
+}
+
+.hum {
+    padding: 0px 28px;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    top: -175px;
+
+
+}
+
+.wind {
+    padding: 0px 28px;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    top: -180px;
+
+}
+
+h2 {
+    position: relative;
+    font-weight: 700;
+    font-size: 35px;
+    /* left:675px; */
+    top: -270px;
+}
+
+.min {
+    margin-top: 30px;
+    margin-left: 5px;
+    /* padding: 1px 20px; */
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1px 5px;
+    position: relative;
+    left: 10px;
+    /* top:20px; */
+}
+
+.max {
+    margin-top: 30px;
+    padding: 1px 5px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    /* top:20px; */
+    left: 5px;
+}
+
+.feel {
+    margin-top: 60px;
+    /* padding: 1px -0px; */
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    right: 66px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 40px;
+    font-size: 34px;
+    margin-top: 30px;
+    /* font-size: ; */
+    display: none;
+}
+
+.gg {
+    display: flex;
+
+}
+
+#jj {
+    position: relative;
+    top: 45px;
+    height: 30px;
+
+}
+
+.tempi {
+    position: relative;
+    left: 740px;
+    top: -110px;
+    height: 90px;
+    /* width:70px; */
+}
+
+.comp {
+    /* color:red; */
+    height: 10vh;
+    width: 107vw;
+    text-align: center;
+}
+
+
+@media screen and (min-width:150px) and (max-width:382px) {
+    .container {
+        height: 600px;
+        width: 350px;
+    }
+
+    .name {
+        width: 330px;
+        position: relative;
+        right: 10px;
+    }
+
+    .input {
+        width: 330px;
+        position: relative;
+        right: 10px;
+    }
+
+    button {
+        position: relative;
+        left: 30px;
+    }
+
+    .weather {
+        width: 330px;
+        height: 400px;
+        position: relative;
+        right: 10px;
+    }
+
+    .min {
+        position: relative;
+        top: -10px;
+    }
+
+    .max {
+        position: relative;
+        top: -10px;
+    }
+
+    .feel {
+        position: relative;
+        top: -10px;
+    }
+
+    .place {
+        position: relative;
+        top: -40px;
+    }
+
+    #jj {
+        position: relative;
+        top: 6px;
+    }
+
+    .pre {
+        position: relative;
+        top: -150px;
+        left: -20px;
+    }
+
+    .hum {
+        position: relative;
+        top: -150px;
+        left: -20px;
+    }
+
+    .wind {
+        position: relative;
+        top: -170px;
+        left: -20px;
+    }
+
+    #tt {
+        position: relative;
+        top: -140px;
+        left: 200px;
+    }
+
+    .over {
+        font-size: 30px;
+        position: relative;
+        top: -80px;
+        left: 190px;
+
+
+    }
+
+    .comp {
+        width: 30vw;
+    }
+
+    .temp {
+        position: relative;
+        left: 170px;
+        font-size: 50px;
+        top: 60px;
+    }
+
+    .tempi {
+        position: relative;
+        left: 220px;
+        height: 50px;
+        top: 70px;
+    }
+}
+
+@media screen and (min-width:383px) and (max-width:500px) {
+    .container {
+        height: 600px;
+        width: 350px;
+    }
+
+    .name {
+        width: 332px;
+        position: relative;
+        right: 10px;
+    }
+
+    .input {
+        width: 332px;
+        position: relative;
+        right: 10px;
+    }
+
+    button {
+        position: relative;
+        left: 15px;
+    }
+
+    .weather {
+        width: 332px;
+        height: 400px;
+        position: relative;
+        right: 10px;
+    }
+
+    .pre {
+        position: relative;
+        top: -114px;
+        left: -25px;
+    }
+
+    .hum {
+        position: relative;
+        top: -114px;
+        left: -25px;
+    }
+
+    .wind {
+        position: relative;
+        top: -140px;
+        left: -25px;
+    }
+
+    #tt {
+        top: -108px;
+        left: 195px;
+    }
+    .over {
+        font-size: 30px;
+        position: relative;
+        top: -80px;
+        left: 190px;
+    }
+
+    .comp {
+        width: 114px;
+    }
+
+    .temp {
+        position: relative;
+        left: 170px;
+        font-size: 50px;
+        top: 60px;
+    }
+
+    .tempi {
+        position: relative;
+        left: 220px;
+        height: 50px;
+        top: 70px;
+}
+}
+/* @media screen and (min-width:393px) and (max-width:500px) {
+    .container {
+        height: 600px;
+        width: 350px;
+    }
+
+    .name {
+        width: 332px;
+        position: relative;
+        right: 10px;
+    }
+
+    .input {
+        width: 332px;
+        position: relative;
+        right: 10px;
+    }
+
+    button {
+        position: relative;
+        left: 15px;
+    }
+
+    .weather {
+        width: 332px;
+        height: 400px;
+        position: relative;
+        right: 10px;
+    }
+
+    .pre {
+        position: relative;
+        top: -114px;
+        left: -25px;
+    }
+
+    .hum {
+        position: relative;
+        top: -114px;
+        left: -25px;
+    }
+
+    .wind {
+        position: relative;
+        top: -140px;
+        left: -25px;
+    }
+
+    #tt {
+        top: -108px;
+        left: 195px;
+    }
+    .over {
+        font-size: 30px;
+        position: relative;
+        top: -80px;
+        left: 190px;
+    }
+
+    .comp {
+        width: 114px;
+    }
+
+    .temp {
+        position: relative;
+        left: 170px;
+        font-size: 50px;
+        top: 60px;
+    }
+
+    .tempi {
+        position: relative;
+        left: 220px;
+        height: 50px;
+        top: 70px;
+}
+} */
+
+@media screen and (min-width:501px) and (max-width:1432px) {
+    .container {
+        height: 590px;
+        width: 420px;
+    }
+
+    .name {
+        width: 402px;
+        position: relative;
+        right: 10px;
+    }
+
+    .input {
+        width: 402px;        
+        position: relative;
+        right: 10px;
+    }
+
+    button {
+        position: relative;
+        left: 1px;
+    }
+
+    .weather {
+        width: 402px;
+        height: 400px;
+        position: relative;
+        right: 10px;
+    }
+
+    .pre {
+        position: relative;
+        top: -100px;
+        left: -25px;
+    }
+
+    .hum {
+        position: relative;
+        top: -100px;
+        left: -25px;
+    }
+
+    .wind {
+        position: relative;
+        top: -125px;
+        left: -25px;
+    }
+
+    #tt {
+        top: -89px;
+        left: 195px;
+    }
+    .over {
+        font-size: 35px;
+        position: relative;
+        top: -178px;
+        left: 237px;
+    }
+
+    .comp {
+        width: 175px;
+    }
+
+    .temp {
+        position: relative;
+        left: 230px;
+        font-size: 69px;
+        top: -38px;
+    }
+
+    .tempi {
+        position: relative;
+        left: 287px;
+        height: 60px;
+        top: -25px;
+}
+}
+
+
+@media screen and (min-width:1471px) and (max-width:2239px) {
+    .container{
+        height: 532px;
+        width: 1061px;
+    }
+    .place {
+        font-size: 70px;
+        position: relative;
+        left: 30px;
+        top: -35px;
+    }
+
+    #jj {
+        height: 60px;
+    }
+
+    .pre {
+        font-size: 45px;
+        position: relative;
+        top: -300px;
+    }
+
+    .hum {
+        font-size: 45px;
+        position: relative;
+        top: -270px;
+    }
+
+    .wind {
+        font-size: 45px;
+        position: relative;
+        top: -260px;
+    }
+
+    #tt {
+        position: relative;
+        left: 280px;
+        top: -210px;
+    }
+
+    .temp {
+        position: relative;
+        left: 1000px;
+        font-size: 200px;
+        ;
+    }
+
+    .over {
+        font-size: 50px;
+    }
+
+    .tempi {
+        position: relative;
+        left: 1150px;
+    }
+}
+
+
+@media screen and (min-width:2240px) and (max-width:2500px) {
+    .container{
+        height: 832px;
+        width: 1551px;
+    }
+    .pre{
+        font-size: 50px;
+    }
+    .hum{
+        font-size: 50px;
+    }
+    .wind{
+        font-size: 50px;
+    }
+    #tt{
+        position: relative;
+        left:340px;
+        top:-140px;
+
+    }
+    .temp{
+        position: relative;
+        left:1100px;
+        font-size: 150px;
+    }
+    .over{
+        position: relative;
+        left:80px;
+        top:-300px;
+    }
+    .tempi{
+        position: relative;
+        left:1210px;
+
+    }
+    .place{
+        font-size: 55px;
+        left:20px;
+        top:-20px;
+        
+    }
+    #jj{
+        position: relative;
+        height:50px;
+
+    }
+}
+
+
